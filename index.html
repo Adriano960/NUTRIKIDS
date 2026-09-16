@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NutriKids — biblioteca visual de ícones e ilustrações para saúde e educação infantil.">
+<title>NutriKids — Biblioteca Visual</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">
+    <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div><strong>NutriKids</strong><small>Crescer com Saúde</small></div>
+  </div>
+  <nav aria-label="Navegação principal">
+    <a href="#categorias">Categorias</a>
+    <a href="#alimentos">Alimentos</a>
+    <a href="#atividades">Atividades</a>
+    <a href="#jogo">Monte sua Refeição</a>
+    <a href="#progresso">Progresso</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <span class="eyebrow">BIBLIOTECA VISUAL EXCLUSIVA</span>
+    <h1>NutriKids<br><em>Crescer com Saúde</em></h1>
+    <p>Ícones, alimentos e ilustrações em uma única linguagem visual: natural, educativa, moderna e acolhedora.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#categorias">Explorar biblioteca</a>
+      <a class="btn secondary" href="#jogo">Testar interação</a>
+    </div>
+  </div>
+  <div class="hero-art" aria-label="Ilustração decorativa de alimentação saudável">
+    <div class="fruit-orbit orbit-a"></div><div class="fruit-orbit orbit-b"></div>
+    <div class="hero-bowl">
+      <div class="hero-fruit apple"></div><div class="hero-fruit orange"></div><div class="hero-fruit leaf"></div>
+    </div>
+  </div>
+</section>
+
+<section id="categorias" class="section">
+  <div class="section-heading"><span class="eyebrow">01 · ÍCONES PRINCIPAIS</span><h2>Uma família visual única</h2><p>Todos os elementos usam a mesma espessura, cantos, proporções, sombras e acabamento.</p></div>
+  <div id="categoryGrid" class="icon-grid"></div>
+</section>
+
+<section id="alimentos" class="section tinted">
+  <div class="section-heading"><span class="eyebrow">02 · ALIMENTOS</span><h2>Biblioteca de alimentos</h2><p>Ilustrações independentes, sem emojis e preparadas para cards, menus, jogos e pratos.</p></div>
+  <div class="tabs" id="foodTabs" role="tablist"></div>
+  <div id="foodGrid" class="food-grid"></div>
+</section>
+
+<section id="hidratacao" class="section">
+  <div class="section-heading"><span class="eyebrow">03 · HIDRATAÇÃO</span><h2>Água de forma clara e profissional</h2></div>
+  <div id="hydrationGrid" class="feature-grid"></div>
+</section>
+
+<section id="atividades" class="section tinted">
+  <div class="section-heading"><span class="eyebrow">04 · MOVIMENTO</span><h2>Atividades físicas e recreativas</h2><p>Movimento apresentado como brincadeira, saúde e bem-estar — nunca como punição ou competição corporal.</p></div>
+  <div id="activityGrid" class="activity-grid"></div>
+</section>
+
+<section id="crescimento" class="section">
+  <div class="section-heading"><span class="eyebrow">05 · CRESCIMENTO</span><h2>Planta de progresso</h2><p>Cada etapa representa uma evolução visual simples e natural.</p></div>
+  <div id="plantGrid" class="plant-grid"></div>
+</section>
+
+<section id="jogo" class="section meal-section">
+  <div class="section-heading"><span class="eyebrow">06 · MONTE SUA REFEIÇÃO</span><h2>Construa uma refeição variada</h2><p>Os alimentos funcionam como componentes independentes. Adicione, remova ou limpe com animações suaves.</p></div>
+  <div class="meal-layout">
+    <div class="plate-wrap">
+      <div class="plate" id="plate" aria-label="Prato da refeição"></div>
+      <div class="meal-actions">
+        <button class="btn secondary" id="clearMeal">Limpar</button>
+        <button class="btn primary" id="confirmMeal">Confirmar refeição</button>
+      </div>
+    </div>
+    <aside class="meal-panel">
+      <h3>Escolha alimentos</h3>
+      <div id="mealFoods" class="meal-foods"></div>
+      <div class="variety">
+        <div><span>Variedade</span><strong id="varietyValue">0 grupos</strong></div>
+        <div class="progress-bar"><span id="varietyBar"></span></div>
+      </div>
+      <div id="mealMessage" class="message" aria-live="polite">Monte sua refeição com diferentes grupos.</div>
+    </aside>
+  </div>
+</section>
+
+<section id="progresso" class="section tinted">
+  <div class="section-heading"><span class="eyebrow">07 · XP E CONQUISTAS</span><h2>Progresso sem aparência de videogame</h2></div>
+  <div class="progress-layout">
+    <div class="xp-card">
+      <div class="xp-ring"><span id="xpNumber">0</span><small>XP</small></div>
+      <div><span class="eyebrow">NÍVEL 01</span><h3>Pequeno explorador</h3><p>Continue descobrindo novos alimentos e hábitos.</p></div>
+    </div>
+    <div id="achievementGrid" class="achievement-grid"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading"><span class="eyebrow">08 · INTERFACE</span><h2>Ícones SVG consistentes</h2><p>Estados normal, hover, selecionado, desabilitado, concluído, erro e sucesso.</p></div>
+  <div id="uiGrid" class="ui-grid"></div>
+</section>
+
+<section class="section scenes">
+  <div class="section-heading"><span class="eyebrow">09 · CENAS</span><h2>Ilustrações de contexto</h2></div>
+  <div class="scene-grid">
+    <article class="scene-card scene-food"><div class="scene-illustration"><div class="person p1"></div><div class="person p2"></div><div class="table"></div><div class="bowl"></div></div><h3>Alimentação em família</h3><p>Momento natural de refeição equilibrada.</p></article>
+    <article class="scene-card scene-water"><div class="scene-illustration"><div class="person p3"></div><div class="water-cup"></div><div class="water-drops"></div></div><h3>Hidratação</h3><p>Água como hábito simples do dia.</p></article>
+    <article class="scene-card scene-learn"><div class="scene-illustration"><div class="person p4"></div><div class="book-shape"></div><div class="plant-small"></div></div><h3>Aprendizado</h3><p>Educação alimentar de forma positiva.</p></article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="brand compact"><div class="brand-mark"><span></span><span></span><span></span></div><div><strong>NutriKids</strong><small>Crescer com Saúde</small></div></div>
+  <p>Nenhum emoji. Uma identidade visual própria para saúde, infância e educação.</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
