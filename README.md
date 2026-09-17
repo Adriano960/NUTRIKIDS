@@ -13,27 +13,37 @@ Esta versão transforma a especificação enviada em uma implementação web aut
 3. Para integrar ao NutriKids existente, mova a biblioteca `iconShapes` e os dados de `app.js` para os componentes do seu projeto.
 
 ## Estrutura recomendada
-```text
-/nutrikids-assets
-  /icons
-    /navigation
-    /actions
-    /health
-    /education
-    /accessibility
-    /progress
-  /foods
-    /fruits
-    /vegetables
-    /cereals
-    /proteins
-    /dairy
-  /hydration
-  /activities
-  /plants
-  /characters
-  /achievements
-  /scenes
-```
+NutriKids/
+│
+├── index.html
+├── styles.css
+├── script.js
+├── README.md
+│
+└── assets/
+    │
+    ├── nutrikids-icon.svg
+    ├── nutrikids-foods.svg
+    ├── nutrikids-library.js
+    │
+    ├── images/
+    │   ├── logo/
+    │   ├── children/
+    │   ├── foods/
+    │   ├── nutrition/
+    │   ├── physical-activity/
+    │   ├── hydration/
+    │   └── illustrations/
+    │
+    ├── icons/
+    │   ├── nutrition.svg
+    │   ├── food.svg
+    │   ├── water.svg
+    │   ├── exercise.svg
+    │   ├── growth.svg
+    │   └── health.svg
+    │
+    └── fonts/
+
 
 Os SVGs estão embutidos no JavaScript para facilitar prototipação e integração. Em produção, eles podem ser exportados para arquivos SVG individuais seguindo nomes como `fruit-apple.svg`, `vegetable-carrot.svg`, `activity-cycling.svg` e `plant-stage-03.svg`.
